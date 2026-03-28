@@ -521,7 +521,7 @@ async function processInput(text) {
   showTyping();
 
   try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
+    const res = await fetch('https://lfyvmnmqrnpxctsaahtt.supabase.co/functions/v1/hanashite', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
